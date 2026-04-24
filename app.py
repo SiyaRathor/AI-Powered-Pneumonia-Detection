@@ -3,7 +3,7 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 
-model = tf.keras.models.load_model("model/pneumonia_cnn_best.h5")
+model = tf.keras.models.load_model("pneumonia_cnn_best.h5")
 
 def predict_pneumonia(image):
     # Preprocess
