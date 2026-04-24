@@ -1,8 +1,4 @@
-fastapi
-uvicorn
 tensorflow
-pillow
-python-multipart
 gradio
+pillow
 numpy
-requests
