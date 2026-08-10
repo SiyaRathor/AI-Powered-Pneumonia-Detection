@@ -10,7 +10,11 @@ An AI-powered web application that detects Pneumonia from Chest X-Ray images usi
 
 ## 🏗️ Project Architecture
 
-User → Gradio UI → FastAPI Backend → CNN Model → Prediction
+             ┌──→ Gradio → CNN
+             |
+User/Client ─┤
+             │
+             └──→ FastAPI → CNN
 
 ## 📊 Model Comparison
 
@@ -58,7 +62,7 @@ PNEUMONIA_AI/
 - **Total Images:** 5,216
 - **Normal:** 1,341 images
 - **Pneumonia:** 3,875 images
-- **Class Imbalance:** Handled using class weights (2.9x)
+- **Class Imbalance:** Handled using class weights 
 
 ## 🚀 How to Run Locally
 
@@ -98,9 +102,9 @@ API Docs   → http://127.0.0.1:8000/docs
 | Test Images | 624 |
 
 ## 🔗 Links
-- 🤗 **Live Demo:** [HuggingFace Spaces](https://huggingface.co/spaces/yourusername/pneumonia-ai)
+- 🤗 **Live Demo:** [HuggingFace Spaces](https://huggingface.co/spaces/siyasingh-28/pneumonia-ai)
 - 📊 **Dataset:** [Kaggle - Chest X-Ray Images](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
-- 💻 **GitHub:** [Repository](https://github.com/yourusername/pneumonia-detection-ai)
+- 💻 **GitHub:** [Repository](https://github.com/SiyaRathor/AI-Powered-Pneumonia-Detection)
 
 ## ⚠️ Disclaimer
 > This AI model is for **educational purposes only.**
