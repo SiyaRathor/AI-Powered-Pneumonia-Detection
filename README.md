@@ -10,11 +10,11 @@ An AI-powered web application that detects Pneumonia from Chest X-Ray images usi
 
 ## 🏗️ Project Architecture
 
-             ┌──→ Gradio → CNN
-             |
-User/Client ─┤
-             │
-             └──→ FastAPI → CNN
+                           ┌──→ Gradio UI ──→ CNN Model
+                    │
+User / Client ──────┤
+                    │
+                    └──→ FastAPI ────→ CNN Model
 
 ## 📊 Model Comparison
 
@@ -48,7 +48,7 @@ PNEUMONIA_AI/
 ### Why CNN over ANN?
 - ANN flattens the image — loses all spatial information
 - CNN uses filters to detect edges, textures, and patterns
-- CNN improved accuracy from 38.94% to 87.34% — 48% improvement!
+- CNN improved accuracy from 38.94% to 87.34% 
 
 ### Training Details
 - **Architecture:** 3 Conv2D blocks + Dense layers
